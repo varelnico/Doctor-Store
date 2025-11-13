@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Store - Marketplace Jual Beli Akun</title>
+
+  <!-- Hubungkan CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🔹 Bagian Header -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="doctor-logo.png" alt="Doctor Store Logo" class="logo" />
+      <h1>Doctor Store</h1>
+    </div>
+    <button class="btn-primary">+ Buat Listing</button>
+  </header>
+
+  <!-- 🔹 Bagian Hero -->
+  <section class="hero">
+    <h2>Marketplace Jual Beli Akun</h2>
+    <p>Pastikan akun yang dijual dimiliki secara sah.</p>
+
+    <!-- 🔍 Pencarian -->
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Cari: nama, game, platform.." />
+      <select id="platform">
+        <option>Semua platform</option>
+        <option>Mobile</option>
+        <option>Steam</option>
+        <option>PSN</option>
+      </select>
+      <select id="sort">
+        <option>Terbaru</option>
+        <option>Termurah</option>
+        <option>Terpopuler</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- 🔹 Daftar Produk -->
+  <section class="product-list" id="productList">
+    <!-- Produk akan dimasukkan lewat JavaScript -->
+  </section>
+<section id="products">
+  <h2>Daftar Akun</h2>
+  <div id="product-list" class="product-container"></div>
+</section>
+
+<script src="script.js"></script>
+
+  <!-- 🔹 Footer -->
+  <footer class="footer">
+    <p>
+      Pastikan setiap transaksi mengikuti hukum dan kebijakan platform.  
+      Jangan menjual akun yang bukan milik Anda atau melanggar aturan.
+    </p>
+  </footer>
+
+  <!-- Hubungkan file JS di bagian paling bawah -->
+  <script src="script.js"></script>
+</body>
+</html>
