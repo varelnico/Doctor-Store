@@ -11,21 +11,23 @@ function formatRupiah(num) {
 
 // Render produk ke halaman
 function renderProducts() {
-  
+  if (products.length === 0) {
+    productList.innerHTML = products
+      .map(
+        (p) => `
+        <div class="product-card">
+          <img src="${p.img}" alt="${p.name}" class="product-img" />
+          <h3>${p.name}</h3>
+          <p>${p.desc}</p>
+          <div class="price">${formatRupiah(p.price)}</div>
+          <a href="#" class="detail-btn">Detail</a>
+        </div>
+      `
+      )
+      .join("");
+    return;
+  }
 
-  productList.innerHTML = products
-    .map(
-      (p) => `
-      <div class="product-card">
-        <img src="${p.img}" alt="${p.name}" class="product-img" />
-        <h3>${p.name}</h3>
-        <p>${p.desc}</p>
-        <div class="price">${formatRupiah(p.price)}</div>
-        <a href="#" class="detail-btn">Detail</a>
-      </div>
-    `
-    )
-    .join("");
 }
 
 // Jalankan fungsi render
