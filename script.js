@@ -11,10 +11,7 @@ function formatRupiah(num) {
 
 // Render produk ke halaman
 function renderProducts() {
-  if (products.length === 0) {
-    productList.innerHTML = "<p style='color:white;text-align:center;'>Belum ada produk ditambahkan.</p>";
-    return;
-  }
+  
 
   productList.innerHTML = products
     .map(
